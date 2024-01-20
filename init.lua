@@ -25,6 +25,9 @@ require("keymaps")
 require("configs.cmp")
 require("configs.lsp")
 require("configs.alpha")
+require("configs.copilot")
 
 require("mason").setup()
 require("lspconfig").lua_ls.setup({})
+
+vim.g.OmniSharp_server_use_net6 = 1

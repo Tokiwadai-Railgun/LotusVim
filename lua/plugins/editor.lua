@@ -69,7 +69,19 @@ return {
 
 		      -- Adds a number of user-friendly snippets
 		      'rafamadriz/friendly-snippets',
-		}
+		},
+    opts = {
+      window = {
+        completion = {
+          border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+          winhighlight = "Normal:CmpPmenu,FloatBorder:CmpBorder,CursorLine:PmenuSel,Search:None",
+        },
+        documentation = {
+          border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+          winhighlight = "Normal:CmpPmenu,FloatBorder:CmpBorder,CursorLine:PmenuSel,Search:None",
+        },
+      },
+    },
 	},
   {"OmniSharp/omnisharp-vim"},
 
@@ -100,4 +112,12 @@ return {
       'folke/neodev.nvim',
     },
   },
+  { "zbirenbaum/copilot.lua"},
+  {
+    "zbirenbaum/copilot-cmp",
+    config = function ()
+      require("copilot_cmp").setup()
+    end
+  }
+
 }

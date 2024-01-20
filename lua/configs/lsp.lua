@@ -94,3 +94,9 @@ mason_lspconfig.setup_handlers {
     }
   end
 }
+
+require'nvim-treesitter.configs'.setup {
+  autotag = {
+    enable = true,
+  }
+}
