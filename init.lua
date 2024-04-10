@@ -19,13 +19,14 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup("plugins")
+require("luasnip.loaders.from_vscode").lazy_load()
 
 -- Importing keymaps and autocmds
 require("keymaps")
 require("configs.cmp")
 require("configs.lsp")
 require("configs.alpha")
-require("configs.copilot")
+require("configs.utils")
 
 require("mason").setup()
 require("lspconfig").lua_ls.setup({})

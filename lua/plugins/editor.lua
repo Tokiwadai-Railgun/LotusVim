@@ -56,6 +56,10 @@ return {
 	},
 
 
+  --Debugging
+  {"mfussengger/nvim-dap"},
+  {"rcarriga/cmp-dap"},
+
 	-- Autocompletion 
 	{"hrsh7th/nvim-cmp",
 		dependencies = {
@@ -123,6 +127,14 @@ return {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
   },
-  { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} }
+    { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+    {
+	"L3MON4D3/LuaSnip",
+	-- follow latest release.
+	version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+	-- install jsregexp (optional!).
+	build = "make install_jsregexp"
+    },
+
 
 }

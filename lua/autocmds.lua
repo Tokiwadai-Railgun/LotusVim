@@ -7,7 +7,7 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter"}, {
 })
 
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter"}, {
-  command = ":set autoindent expandtab tabstop=2 shiftwidth=2"
+  command = ":set autoindent expandtab tabstop=4 shiftwidth=4"
 })
 
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter"}, {
